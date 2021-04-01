@@ -24,3 +24,5 @@ Route.post('cadastro_site','AuthController.register').validator('StoreUser')
 Route.post('auth','AuthController.login').middleware('guest')
 
 Route.get('perfil','UserController.profile').middleware('auth')
+
+Route.get('whatsapp', 'WhatsAppController.init').middleware('auth')
