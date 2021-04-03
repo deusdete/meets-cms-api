@@ -30,7 +30,7 @@ class WhatsAppController {
     client.on('ready', () => {
       console.log('Client is ready!');
     });
-
+cd
     client.on('message', message => {
       console.log(message.body);
     });

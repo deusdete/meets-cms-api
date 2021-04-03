@@ -9,6 +9,7 @@ class UserSchema extends Schema {
       table.increments()
       table.string('nome', 80).notNullable().unique()
       table.string('email', 254).notNullable().unique()
+      table.string('celular', 11).notNullable().unique()
       table.string('senha', 60).notNullable()
       table.integer('qtde_usuarios')
       table.boolean('aceito')

@@ -15,6 +15,7 @@ class StoreUser {
 
   get messages () {
     return {
+      'nome.required': 'Você deve fornecer um nome pessoal ou empresa',
       'email.required': 'Você deve fornecer um endereço de e-mail.',
       'email.email': 'Você deve fornecer um endereço de e-mail válido.',
       'email.unique': 'Este e-mail já está registado.',
